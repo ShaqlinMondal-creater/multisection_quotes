@@ -1,0 +1,407 @@
+<!-- static code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://picsum.photos/2000/1200');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <!-- First Section -->
+    <style>
+        .first {
+            flex-direction: column;
+        }
+
+        .first .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .first .button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+    </style>
+    <section class="first">
+        <button class="button">Get Started</button>
+    </section>
+
+    <!-- Second Section -->
+    <style>
+        .second {
+            flex-direction: column;
+            background: rgba(244, 244, 244, 0.8);
+        }
+
+        .second .header {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .second .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .second .action {
+            flex: 1;
+            text-align: center;
+        }
+
+        .second .action button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: 2px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .second .action button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+
+        .second .image-container {
+            flex: 2;
+            text-align: center;
+        }
+
+        .second .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .second .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+    <section class="second">
+        <div class="header">Help us know your design style better</div>
+
+        <div class="container">
+            <div class="action">
+                <button>Dislike 👎</button>
+            </div>
+
+            <div class="image-container">
+                <img src="https://picsum.photos/2000/1200" alt="Design Style">
+            </div>
+
+            <div class="action">
+                <button>Like 👍</button>
+            </div>
+        </div>
+
+        <div class="footer">2 of 12</div>
+    </section>
+
+    <!-- Third Section -->
+    <style>
+        .third {
+            flex-direction: column;
+        }
+
+        .third .question {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .third .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .third .option {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .third .option:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+    </style>
+    <section class="third">
+        <div class="question">I am looking for an</div>
+        <div class="options">
+            <div class="option">Interior Designer</div>
+            <div class="option">Architect</div>
+        </div>
+    </section>
+
+    <!-- Fourth Section -->
+    <style>
+        .forth {
+            flex-direction: column;
+        }
+
+        .forth .question {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .forth .options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .forth .option {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .forth .option:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+    </style>
+    <section class="forth">
+        <div class="question">The designer would work on my</div>
+        <div class="options">
+            <div class="option">Home</div>
+            <div class="option">Office</div>
+            <div class="option">Hotel</div>
+            <div class="option">Showroom</div>
+            <div class="option">Restaurant</div>
+            <div class="option">Shop</div>
+        </div>
+    </section>
+
+    <!-- Fifth Section -->
+    <style>
+        .fifth {
+            flex-direction: column;
+        }
+
+        .fifth .question {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .fifth .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .fifth .option {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .fifth .option:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+    </style>
+    <section class="fifth">
+        <div class="question">My project area is</div>
+        <div class="options">
+            <div class="option">500 - 1000 Sqft</div>
+            <div class="option">1000 - 1500 Sqft</div>
+            <div class="option">1500 - 2000 Sqft</div>
+            <div class="option">More than 2000 Sqft</div>
+        </div>
+    </section>
+
+    <!-- Sixth Section -->
+    <style>
+        .sixth {
+            flex-direction: column;
+        }
+
+        .sixth .question {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .sixth .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .sixth .option {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .sixth .option:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+    </style>
+    <section class="sixth">
+        <div class="question">I am willing to spend</div>
+        <div class="options">
+            <div class="option">Upto Rs 15 lakhs</div>
+            <div class="option">15 lakhs - 30 lakhs</div>
+            <div class="option">30 lakhs - 50 lakhs</div>
+            <div class="option">More than 50 lakhs</div>
+        </div>
+    </section>
+
+    <!-- Seventh Section -->
+    <style>
+        .seventh {
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+        }
+
+        .seventh .form-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .seventh .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .seventh .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .seventh .form-container input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .seventh .form-container button {
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .seventh .form-container button:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+    <section class="seventh">
+        <div class="form-container">
+            <h2>Contact me at</h2>
+            <form>
+                <input type="text" name="name" placeholder="NAME" required>
+                <input type="text" name="mobile" placeholder="MOBILE" required>
+                <input type="email" name="email" placeholder="EMAIL-ID" required>
+                <input type="text" name="city" placeholder="CITY" required>
+                <input type="text" name="pincode" placeholder="PINCODE" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
